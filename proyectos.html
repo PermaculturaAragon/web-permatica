@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#173d2b">
+    <title>Proyectos · PERMATICA</title>
+    <meta name="description" content="Cinco ejemplos de domótica: aforador de aljibe, riego, calefacción, energía y climatización.">
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="PERMATICA — Inicio"><img src="assets/logo-permatica.jpg" width="472" height="138" alt="PERMATICA. Permacultura y domótica open source"></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+        <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="proyectos.html" aria-current="page">Proyectos</a><a href="open-source.html">Open source</a><a href="sobre-permatica.html">Sobre PERMATICA</a><a href="contacto.html" class="nav-contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <noscript>
+      <div class="noscript">
+        Navegación: <a href="index.html">Inicio</a> · <a href="servicios.html">Servicios</a> · <a href="proyectos.html">Proyectos</a> · <a href="open-source.html">Open source</a> · <a href="sobre-permatica.html">Sobre PERMATICA</a> · <a href="contacto.html">Contacto</a>
+      </div>
+    </noscript>
+    <main id="contenido">
+      <section class="page-intro">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Proyectos</span>
+          </div>
+          <span class="eyebrow">PERMATICA / Proyectos</span>
+          <h1>
+            Soluciones que ya<br>estamos aplicando
+          </h1>
+          <p class="lead">
+            Estos proyectos muestran cómo aplicamos la domótica a necesidades concretas. Cada solución se diseña según el lugar, los recursos disponibles y la forma en que las personas utilizan la instalación.
+          </p>
+        </div>
+      </section>
+      <div class="container">
+        <article class="detail-section" id="aforador">
+          <div>
+            <span class="eyebrow">Proyecto / 01</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2 4-7 8-7 12a7 7 0 0 0 14 0c0-4-5-8-7-12Z"/><path d="M8 15a4 4 0 0 0 4 4"/></svg>
+            </div>
+            <h2>
+              Aforador para aljibe
+            </h2>
+            <span class="tag">Ejemplo open source y DIY</span>
+          </div>
+          <div>
+            <p>
+              Sistema para conocer el agua disponible en un aljibe sin tener que comprobarlo manualmente.
+            </p>
+            <p>
+              Una sonda mide el nivel del agua y envía los datos a un panel donde pueden consultarse el porcentaje disponible, el volumen aproximado en litros y su evolución a lo largo del tiempo.
+            </p>
+            <p class="tech">
+              <strong>Tecnologías:</strong> ESP32, ADS1115, ESPHome y Home Assistant.
+            </p>
+            <a class="button " href="open-source.html">Ver el proyecto del aforador<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+          </div>
+        </article>
+        <article class="detail-section" id="riego">
+          <div>
+            <span class="eyebrow">Proyecto / 02</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 3c-9-1-17 2-17 10a7 7 0 0 0 7 7c8 0 11-8 10-17ZM4 20 15 9"/></svg>
+            </div>
+            <h2>
+              Automatización del riego
+            </h2>
+          </div>
+          <div>
+            <p>
+              Sistema para controlar diferentes zonas de riego desde un único lugar, establecer horarios y activar o detener cada zona manualmente.
+            </p>
+            <p>
+              Permite adaptar el funcionamiento a las necesidades de huertos, jardines e invernaderos y facilita futuras ampliaciones con sensores o condiciones ambientales.
+            </p>
+            <p class="tech">
+              <strong>Tecnologías:</strong> Home Assistant, dispositivos conectados y automatizaciones personalizadas.
+            </p>
+          </div>
+        </article>
+        <article class="detail-section" id="calefaccion">
+          <div>
+            <span class="eyebrow">Proyecto / 03</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 14.5V5a2 2 0 0 0-4 0v9.5a4 4 0 1 0 4 0ZM12 10v7m5-9h3m-3 4h3"/></svg>
+            </div>
+            <h2>
+              Control de calefacción
+            </h2>
+          </div>
+          <div>
+            <p>
+              Sistema para supervisar las temperaturas de la instalación y coordinar la calefacción, los circuitos y el depósito de inercia.
+            </p>
+            <p>
+              La automatización ayuda a aprovechar mejor la energía disponible y mantiene controles manuales para poder actuar directamente cuando sea necesario.
+            </p>
+            <p class="tech">
+              <strong>Tecnologías:</strong> Sensores de temperatura, actuadores, Home Assistant y automatizaciones.
+            </p>
+          </div>
+        </article>
+        <article class="detail-section" id="energia">
+          <div>
+            <span class="eyebrow">Proyecto / 04</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-12h-7l1-8Z"/></svg>
+            </div>
+            <h2>
+              Monitorización de energía
+            </h2>
+          </div>
+          <div>
+            <p>
+              Sistema para consultar la producción y el consumo eléctrico y comprender cómo se está utilizando la energía.
+            </p>
+            <p>
+              Los datos permiten detectar consumos, observar su evolución y utilizar los excedentes disponibles de forma más eficiente.
+            </p>
+            <p class="tech">
+              <strong>Tecnologías:</strong> Medidores de consumo, integración energética y Home Assistant.
+            </p>
+          </div>
+        </article>
+        <article class="detail-section" id="climatizacion">
+          <div>
+            <span class="eyebrow">Proyecto / 05</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M6 11h3l2-4 3 7 2-3h2"/></svg>
+            </div>
+            <h2>
+              Control de climatización
+            </h2>
+          </div>
+          <div>
+            <p>
+              Sistema que activa o desactiva la climatización según la temperatura establecida por el usuario.
+            </p>
+            <p>
+              Incluye control directo, ajuste de la temperatura objetivo e información histórica para comprobar cuándo ha funcionado el equipo.
+            </p>
+            <p class="tech">
+              <strong>Tecnologías:</strong> Sensores de temperatura, control conectado y Home Assistant.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="section">
+      </div>
+      <section class="cta">
+        <div class="container">
+          <div>
+            <h2>
+              ¿Tienes una necesidad parecida?
+            </h2>
+            <p>
+              Estos proyectos son ejemplos, no soluciones cerradas. Podemos estudiar tu espacio y diseñar una instalación adaptada a su funcionamiento real.
+            </p>
+          </div>
+          <a class="button " href="contacto.html">Solicita un presupuesto personalizado<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html"><img src="assets/logo-permatica.jpg" width="472" height="138" alt="PERMATICA" loading="lazy"></a>
+            <p>
+              Un proyecto colectivo de Permacultura Aragón.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <a href="servicios.html">Servicios</a><a href="proyectos.html">Proyectos</a><a href="open-source.html">Open source y DIY</a>
+            </div>
+            <div>
+              <a href="sobre-permatica.html">Sobre PERMATICA</a><a href="contacto.html">Contacto</a><a href="https://permaculturaaragon.org/" target="_blank" rel="noopener noreferrer">Permacultura Aragón ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 PERMATICA · Permacultura Aragón</span><span>Permacultura y domótica open source</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

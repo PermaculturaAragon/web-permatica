@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#173d2b">
+    <title>Aforador de aljibe open source · PERMATICA</title>
+    <meta name="description" content="Conoce el proyecto DIY de aforador de aljibe con ESPHome y Home Assistant. Documentación en preparación.">
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="PERMATICA — Inicio"><img src="assets/logo-permatica.jpg" width="472" height="138" alt="PERMATICA. Permacultura y domótica open source"></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+        <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="proyectos.html">Proyectos</a><a href="open-source.html" aria-current="page">Open source</a><a href="sobre-permatica.html">Sobre PERMATICA</a><a href="contacto.html" class="nav-contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <noscript>
+      <div class="noscript">
+        Navegación: <a href="index.html">Inicio</a> · <a href="servicios.html">Servicios</a> · <a href="proyectos.html">Proyectos</a> · <a href="open-source.html">Open source</a> · <a href="sobre-permatica.html">Sobre PERMATICA</a> · <a href="contacto.html">Contacto</a>
+      </div>
+    </noscript>
+    <main id="contenido">
+      <section class="page-intro">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Open source</span>
+          </div>
+          <span class="eyebrow">PERMATICA / Open source</span>
+          <h1>
+            Proyectos abiertos<br>para construir y adaptar
+          </h1>
+          <p class="lead">
+            En PERMATICA creemos que la tecnología debe poder comprenderse, compartirse y mejorarse. Nuestro primer ejemplo DIY es el aforador de aljibe.
+          </p>
+        </div>
+      </section>
+      <div class="container">
+        <div class="article-grid">
+          <nav class="article-nav" aria-label="En esta página">
+            <a href="#aforador">El proyecto</a><a href="#funcionamiento">Cómo funciona</a><a href="#componentes">Componentes</a><a href="#calibracion">Calibración</a><a href="#documentacion">Documentación</a>
+          </nav>
+          <article class="article-content">
+            <section id="aforador">
+              <span class="eyebrow">01 / Aforador de aljibe</span>
+              <h2>
+                Conoce el agua<br>que tienes disponible
+              </h2>
+              <p>
+                El aforador permite conocer cuánta agua hay almacenada en un aljibe sin abrirlo ni realizar mediciones manuales. La información puede consultarse desde el panel de Home Assistant.
+              </p>
+              <ul class="feature-list">
+                <li>
+                  Porcentaje de agua disponible.
+                </li>
+                <li>
+                  Volumen aproximado en litros.
+                </li>
+                <li>
+                  Evolución del nivel a lo largo del tiempo.
+                </li>
+                <li>
+                  Posibilidad de crear avisos y automatizaciones.
+                </li>
+              </ul>
+            </section>
+            <section id="funcionamiento">
+              <span class="eyebrow">02 / De la medida al dato</span>
+              <h2>
+                ¿Cómo funciona?
+              </h2>
+              <p>
+                Una sonda instalada en el aljibe mide la presión producida por la columna de agua. La señal se procesa mediante un módulo de medición y un ESP32, que envía los datos a Home Assistant.
+              </p>
+              <p>
+                El sistema transforma esa lectura en información comprensible: porcentaje y litros disponibles, según la calibración de cada depósito.
+              </p>
+            </section>
+            <section id="componentes">
+              <span class="eyebrow">03 / La base del sistema</span>
+              <h2>
+                Componentes principales
+              </h2>
+              <div class="component-grid">
+                <div class="component">
+                  <strong>ESP32</strong>
+                  <p>
+                    Procesa las lecturas y comunica los datos.
+                  </p>
+                </div>
+                <div class="component">
+                  <strong>Sonda de nivel de 24 V</strong>
+                  <p>
+                    Mide la presión de la columna de agua.
+                  </p>
+                </div>
+                <div class="component">
+                  <strong>Conversor ADS1115</strong>
+                  <p>
+                    Convierte la señal analógica en una lectura digital.
+                  </p>
+                </div>
+                <div class="component">
+                  <strong>Adaptación de señal</strong>
+                  <p>
+                    Ajusta la señal al rango admitido por el módulo.
+                  </p>
+                </div>
+                <div class="component">
+                  <strong>Alimentación y protección</strong>
+                  <p>
+                    Fuentes, conexiones y envolvente adecuadas al montaje.
+                  </p>
+                </div>
+                <div class="component">
+                  <strong>ESPHome y Home Assistant</strong>
+                  <p>
+                    Configuración, integración y visualización de los datos.
+                  </p>
+                </div>
+              </div>
+              <p class="privacy-note">
+                La selección exacta de la sonda y la adaptación de señal deben comprobarse antes de reproducir el montaje.
+              </p>
+            </section>
+            <section id="calibracion">
+              <span class="eyebrow">04 / Cada aljibe es diferente</span>
+              <h2>
+                Un sistema adaptable
+              </h2>
+              <p>
+                Cada aljibe tiene una profundidad, una forma y una capacidad diferentes. Por eso es necesario calibrar las lecturas y adaptar los cálculos a cada instalación.
+              </p>
+              <p>
+                En el ejemplo de partida se utiliza una capacidad aproximada de 55.000 litros y una profundidad útil de 2,5 metros. Estos valores no deben trasladarse directamente a otro depósito.
+              </p>
+              <p>
+                La relación entre altura y volumen depende de la geometría: no todos los depósitos pueden calcularse con una conversión lineal.
+              </p>
+            </section>
+            <section id="documentacion">
+              <span class="eyebrow">05 / Open source y DIY</span>
+              <h2>
+                Documentación del proyecto
+              </h2>
+              <p>
+                Estamos preparando la información para que el proyecto pueda comprenderse, reproducirse y adaptarse.
+              </p>
+              <ul class="feature-list">
+                <li>
+                  Lista de materiales y referencias de componentes.
+                </li>
+                <li>
+                  Esquema de conexiones.
+                </li>
+                <li>
+                  Configuración de ESPHome e integración en Home Assistant.
+                </li>
+                <li>
+                  Panel de visualización.
+                </li>
+                <li>
+                  Proceso de calibración.
+                </li>
+                <li>
+                  Explicación del montaje y las pruebas.
+                </li>
+                <li>
+                  Código y licencia de reutilización.
+                </li>
+              </ul>
+              <div class="notice">
+                <p>
+                  <strong>Documentación en preparación.</strong> El repositorio y las descargas aún no están disponibles. Los publicaremos cuando se hayan revisado las conexiones, la configuración y la licencia.
+                </p>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+      <section class="cta">
+        <div class="container">
+          <div>
+            <h2>
+              ¿Prefieres una solución instalada?
+            </h2>
+            <p>
+              Si necesitas un sistema adaptado y listo para utilizar, podemos diseñarlo, instalarlo, configurarlo y enseñarte a manejarlo.
+            </p>
+          </div>
+          <a class="button " href="contacto.html">Solicita un presupuesto personalizado<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html"><img src="assets/logo-permatica.jpg" width="472" height="138" alt="PERMATICA" loading="lazy"></a>
+            <p>
+              Un proyecto colectivo de Permacultura Aragón.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <a href="servicios.html">Servicios</a><a href="proyectos.html">Proyectos</a><a href="open-source.html">Open source y DIY</a>
+            </div>
+            <div>
+              <a href="sobre-permatica.html">Sobre PERMATICA</a><a href="contacto.html">Contacto</a><a href="https://permaculturaaragon.org/" target="_blank" rel="noopener noreferrer">Permacultura Aragón ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 PERMATICA · Permacultura Aragón</span><span>Permacultura y domótica open source</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
