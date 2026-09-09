@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#173d2b">
+    <title>Contacto y presupuesto personalizado · PERMATICA</title>
+    <meta name="description" content="Cuéntanos qué necesitas medir, controlar o automatizar. Estudiaremos una solución adaptada a tu proyecto.">
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="PERMATICA — Inicio"><img src="assets/logo-permatica.jpg" width="472" height="138" alt="PERMATICA. Permacultura y domótica open source"></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+        <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="proyectos.html">Proyectos</a><a href="open-source.html">Open source</a><a href="sobre-permatica.html">Sobre PERMATICA</a><a href="contacto.html" aria-current="page" class="nav-contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <noscript>
+      <div class="noscript">
+        Navegación: <a href="index.html">Inicio</a> · <a href="servicios.html">Servicios</a> · <a href="proyectos.html">Proyectos</a> · <a href="open-source.html">Open source</a> · <a href="sobre-permatica.html">Sobre PERMATICA</a> · <a href="contacto.html">Contacto</a>
+      </div>
+    </noscript>
+    <main id="contenido">
+      <section class="page-intro">
+        <div class="container">
+          <div class="breadcrumb">
+            <a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Contacto</span>
+          </div>
+          <span class="eyebrow">PERMATICA / Contacto</span>
+          <h1>
+            Cuéntanos tu proyecto
+          </h1>
+          <p class="lead">
+            ¿Necesitas controlar el riego, conocer el agua disponible, supervisar el consumo energético o automatizar alguna instalación? Explícanos qué quieres conseguir.
+          </p>
+        </div>
+      </section>
+      <div class="container">
+        <div class="contact-grid">
+          <aside class="contact-aside">
+            <span class="eyebrow">Una solución a tu medida</span>
+            <h2>
+              El primer paso<br>es escucharte
+            </h2>
+            <p>
+              Estudiaremos tu caso y prepararemos un presupuesto personalizado según las necesidades del proyecto.
+            </p>
+            <ol>
+              <li>
+                Nos cuentas qué necesitas.
+              </li>
+              <li>
+                Revisamos la información y contactamos contigo.
+              </li>
+              <li>
+                Preparamos una propuesta adaptada.
+              </li>
+            </ol>
+            <p>
+              También puedes escribirnos:
+            </p>
+            <a class="email-link" href="mailto:infopermatica@gmail.com">infopermatica@gmail.com</a>
+            <div class="notice">
+              <p>
+                Estudiamos cada proyecto según sus necesidades y ubicación.
+              </p>
+            </div>
+          </aside>
+          <div class="form-shell">
+            <div class="notice" id="preview-notice">
+              <p>
+                <strong>Formulario de muestra.</strong> El envío aún no está activado. Esta versión no guarda ni envía los datos que escribas.
+              </p>
+            </div>
+            <form id="project-form" aria-describedby="preview-notice privacy-draft" method="post">
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="name">
+                    Nombre y apellidos <span aria-hidden="true">*</span>
+                  </label>
+                  <input id="name" name="name" autocomplete="name" required maxlength="150">
+                </div>
+                <div class="field">
+                  <label for="email">
+                    Correo electrónico <span aria-hidden="true">*</span>
+                  </label>
+                  <input type="email" id="email" name="email" autocomplete="email" required maxlength="254">
+                </div>
+                <div class="field">
+                  <label for="phone">
+                    Teléfono <small>(opcional)</small>
+                  </label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" maxlength="40">
+                </div>
+                <div class="field full">
+                  <label for="location">
+                    Localidad o ubicación del proyecto <span aria-hidden="true">*</span>
+                  </label>
+                  <input id="location" name="location" autocomplete="address-level2" required maxlength="200">
+                </div>
+                <div class="field full">
+                  <label for="space">
+                    Tipo de espacio <span aria-hidden="true">*</span>
+                  </label>
+                  <select id="space" name="space" required><option value="">Selecciona una opción</option><option>Vivienda</option><option>Finca</option><option>Huerto</option><option>Invernadero</option><option>Asociación</option><option>Centro educativo</option><option>Otro</option></select>
+                </div>
+                <div class="field full">
+                  <label for="need">
+                    ¿Qué necesitas medir, controlar o automatizar? <span aria-hidden="true">*</span>
+                  </label>
+                  <input id="need" name="need" required maxlength="300" placeholder="Por ejemplo: el riego de tres zonas">
+                </div>
+                <div class="field full">
+                  <label for="description">
+                    Descripción del proyecto <span aria-hidden="true">*</span>
+                  </label>
+                  <textarea id="description" name="description" required maxlength="5000" placeholder="Cuéntanos cómo es el espacio, qué tienes instalado y qué te gustaría mejorar."></textarea>
+                </div>
+              </div>
+              <label class="check-line">
+                <input type="checkbox" name="privacy" required disabled><span>He leído y acepto la política de privacidad <span class="subtle">(pendiente de incorporar)</span>.</span>
+              </label>
+              <button type="submit" class="button" disabled>Enviar solicitud · Pendiente de activar</button>
+              <p class="privacy-note" id="privacy-draft">
+                Antes de activar el envío, se incorporará la política de privacidad y se conectará el formulario con infopermatica@gmail.com.
+              </p>
+              <p class="form-message" id="form-message" role="status" aria-live="polite">
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html"><img src="assets/logo-permatica.jpg" width="472" height="138" alt="PERMATICA" loading="lazy"></a>
+            <p>
+              Un proyecto colectivo de Permacultura Aragón.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <a href="servicios.html">Servicios</a><a href="proyectos.html">Proyectos</a><a href="open-source.html">Open source y DIY</a>
+            </div>
+            <div>
+              <a href="sobre-permatica.html">Sobre PERMATICA</a><a href="contacto.html">Contacto</a><a href="https://permaculturaaragon.org/" target="_blank" rel="noopener noreferrer">Permacultura Aragón ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 PERMATICA · Permacultura Aragón</span><span>Permacultura y domótica open source</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
