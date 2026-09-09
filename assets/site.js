@@ -8,6 +8,11 @@ if (menuButton && menu) {
   menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
   window.matchMedia('(min-width: 901px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
 }
+
+document.querySelectorAll('.footer-brand img').forEach(img => {
+  img.style.height = 'auto';
+});
+
 const form = document.querySelector('#project-form');
 if (form) {
   form.addEventListener('submit', event => {
