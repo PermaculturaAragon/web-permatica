@@ -1,4 +1,14 @@
 'use strict';
+
+const faviconHref = 'assets/favicon.png';
+if (!document.querySelector('link[rel="icon"]')) {
+  const favicon = document.createElement('link');
+  favicon.rel = 'icon';
+  favicon.type = 'image/png';
+  favicon.href = faviconHref;
+  document.head.appendChild(favicon);
+}
+
 const menuButton = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.main-nav');
 if (menuButton && menu) {
