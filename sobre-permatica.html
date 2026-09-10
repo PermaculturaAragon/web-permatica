@@ -15,9 +15,11 @@
     <meta property="og:description" content="Las éticas y los 12 principios de la permacultura aplicados a la domótica, la automatización y la gestión eficiente de agua y energía.">
     <meta property="og:url" content="https://permaculturaaragon.github.io/web-permatica/sobre-permatica.html">
     <meta property="og:site_name" content="PERMATICA · Permacultura Aragón">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://permaculturaaragon.github.io/web-permatica/assets/sobre-permatica/sobre-hero-torre-escribana.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Permática: permacultura y domótica open source">
     <meta name="twitter:description" content="Permacultura aplicada a la domótica, la automatización y la tecnología open source.">
+    <meta name="twitter:image" content="https://permaculturaaragon.github.io/web-permatica/assets/sobre-permatica/sobre-hero-torre-escribana.jpg">
     <script type="application/ld+json">
       {
         "@context":"https://schema.org",
@@ -27,11 +29,8 @@
         "description":"PERMATICA aplica las éticas y principios de la permacultura a la domótica, la automatización y la gestión eficiente de agua y energía.",
         "url":"https://permaculturaaragon.github.io/web-permatica/sobre-permatica.html",
         "inLanguage":"es",
-        "isPartOf":{
-          "@type":"WebSite",
-          "name":"PERMATICA",
-          "url":"https://permaculturaaragon.github.io/web-permatica/"
-        },
+        "primaryImageOfPage":{"@type":"ImageObject","url":"https://permaculturaaragon.github.io/web-permatica/assets/sobre-permatica/sobre-hero-torre-escribana.jpg"},
+        "isPartOf":{"@type":"WebSite","name":"PERMATICA","url":"https://permaculturaaragon.github.io/web-permatica/"},
         "about":[
           {"@type":"Thing","name":"Permacultura"},
           {"@type":"Thing","name":"Domótica"},
@@ -43,37 +42,7 @@
       }
     </script>
     <link rel="stylesheet" href="assets/site.css">
-    <style>
-      .about-principles{padding:72px 0 82px}
-      .about-principles>h2{margin-bottom:38px}
-      .principles-block{margin-top:58px}
-      .principles-block>h3{font-size:clamp(1.7rem,2.4vw,2.35rem);margin-bottom:30px}
-      .ethics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-      .ethic-card,.holmgren-card{border-top:1px solid var(--line);padding-top:24px}
-      .ethic-card{display:flex;flex-direction:column;align-items:flex-start}
-      .principle-image{width:132px;height:132px;aspect-ratio:1;border-radius:50%;object-fit:cover;margin-bottom:22px}
-      .ethic-card .principle-image{width:150px;height:150px}
-      .ethic-card h4,.holmgren-card h4{font-size:1.3rem;font-weight:500;letter-spacing:-.025em;line-height:1.2;margin:0 0 13px;color:var(--ink)}
-      .ethic-card p,.holmgren-card p{color:var(--muted)}
-      .holmgren-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 46px}
-      .holmgren-card{display:grid;grid-template-columns:132px minmax(0,1fr);gap:24px;align-items:start}
-      .holmgren-card .principle-image{margin:0}
-      .principle-num{font: .78rem ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:10px}
-      @media(max-width:900px){
-        .ethics-grid{grid-template-columns:1fr 1fr}
-        .holmgren-grid{grid-template-columns:1fr}
-      }
-      @media(max-width:640px){
-        .about-principles{padding:52px 0 60px}
-        .ethics-grid{grid-template-columns:1fr}
-        .ethic-card{display:grid;grid-template-columns:104px 1fr;column-gap:20px;align-items:start}
-        .ethic-card .principle-image{width:104px;height:104px;grid-row:1/3;margin:0}
-        .ethic-card h4{align-self:end}
-        .holmgren-card{grid-template-columns:92px 1fr;gap:18px}
-        .holmgren-card .principle-image{width:92px;height:92px}
-        .principles-block{margin-top:46px}
-      }
-    </style>
+    <link rel="stylesheet" href="assets/visual.css">
     <script src="assets/site.js" defer></script>
   </head>
   <body>
@@ -92,27 +61,52 @@
 
     <main id="contenido">
       <section class="page-intro">
-        <div class="container">
-          <div class="breadcrumb"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Sobre PERMATICA</span></div>
-          <span class="eyebrow">PERMATICA / Sobre PERMATICA</span>
-          <h1>Permacultura y domótica<br>open source en acción</h1>
-          <p class="lead">PERMATICA es un proyecto que nace de la Asociación Permacultura Aragón como necesidad de automatizar, controlar y ahorrar en el Centro Demostrativo de Permacultura Torre Escribana. La magnitud del proyecto requería de una alta implicación humana para mantener algunos elementos como el riego o la calefacción. Automatizarlos ayuda a ahorrar energía y agua mediante un control más exhaustivo y medible.</p>
+        <div class="container media-split">
+          <div class="media-copy">
+            <div class="breadcrumb"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Sobre PERMATICA</span></div>
+            <span class="eyebrow">PERMATICA / Sobre PERMATICA</span>
+            <h1>Permacultura y domótica<br>open source en acción</h1>
+            <p class="lead">PERMATICA es un proyecto que nace de la Asociación Permacultura Aragón como necesidad de automatizar, controlar y ahorrar en el Centro Demostrativo de Permacultura Torre Escribana. La magnitud del proyecto requería de una alta implicación humana para mantener algunos elementos como el riego o la calefacción. Automatizarlos ayuda a ahorrar energía y agua mediante un control más exhaustivo y medible.</p>
+          </div>
+          <figure class="media-frame landscape">
+            <img src="assets/sobre-permatica/sobre-hero-torre-escribana.jpg" alt="Torre Escribana, Centro Demostrativo de Permacultura donde nace PERMATICA" fetchpriority="high">
+          </figure>
         </div>
       </section>
 
       <div class="container">
-        <section class="detail-section">
-          <div>
+        <section class="detail-section media-split reverse">
+          <div class="media-copy">
             <span class="eyebrow">Nuestro punto de partida</span>
             <h2>La tecnología<br>tiene que ayudar</h2>
-          </div>
-          <div>
             <p>Nacemos de una idea sencilla: la domótica puede facilitar tareas, ahorrar recursos y mejorar el funcionamiento de un espacio sin convertirlo en un sistema complicado o imposible de controlar.</p>
             <p>Trasladamos los principios éticos y de diseño permacultural al ámbito tecnológico: observar antes de actuar, trabajar con los recursos disponibles y crear sistemas útiles, adaptables y responsables.</p>
           </div>
+          <figure class="media-frame landscape">
+            <img src="assets/sobre-permatica/sobre-tecnologia-en-accion.jpg" alt="Tecnología y automatización aplicadas a una instalación real de PERMATICA" loading="lazy">
+          </figure>
         </section>
+      </div>
 
-        <section class="about-principles" aria-labelledby="principios-title">
+      <section class="visual-band">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Del dato a la acción</span>
+              <h2>Medir, decidir y actuar</h2>
+              <p>Los sensores observan lo que ocurre, un sistema común reúne la información y los actuadores ejecutan las decisiones. Todo ello puede supervisarse desde una interfaz accesible.</p>
+            </div>
+          </div>
+          <div class="media-grid">
+            <figure class="media-card"><img src="assets/sobre-permatica/sobre-detalle-sensor.jpg" alt="Sensor utilizado para medir variables de una instalación" loading="lazy"><figcaption>Sensores: información del entorno y de las instalaciones.</figcaption></figure>
+            <figure class="media-card"><img src="assets/sobre-permatica/sobre-home-assistant.jpg" alt="Panel de control Home Assistant utilizado para supervisar una instalación" loading="lazy"><figcaption>Un cerebro común: información, automatizaciones y control.</figcaption></figure>
+            <figure class="media-card"><img src="assets/sobre-permatica/sobre-actuador.jpg" alt="Actuador que permite controlar una instalación automatizada" loading="lazy"><figcaption>Actuadores: válvulas, relés, bombas y otros elementos que ejecutan las acciones.</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="principles-visual" aria-labelledby="principios-title">
           <span class="eyebrow">Nuestros principios</span>
           <h2 id="principios-title">La permacultura aplicada a la tecnología</h2>
 
@@ -120,15 +114,15 @@
             <h3>Las tres éticas de la permacultura</h3>
             <div class="ethics-grid">
               <article class="ethic-card">
-                <img class="principle-image" src="assets/principios/tierra.png" alt="Símbolo de cuidado de la tierra" loading="lazy">
+                <img class="principle-image round-image" src="assets/principios/tierra.png" alt="Símbolo de cuidado de la tierra" loading="lazy">
                 <div><h4>Cuidado de la tierra</h4><p>Diseñamos sistemas tecnológicos que ayudan a cuidar el agua, la energía, el suelo y los ecosistemas. Buscamos reducir el consumo de recursos, evitar desperdicios y trabajar de acuerdo con las condiciones de cada lugar.</p></div>
               </article>
               <article class="ethic-card">
-                <img class="principle-image" src="assets/principios/gente.png" alt="Símbolo de cuidado de las personas" loading="lazy">
+                <img class="principle-image round-image" src="assets/principios/gente.png" alt="Símbolo de cuidado de las personas" loading="lazy">
                 <div><h4>Cuidado de las personas</h4><p>La tecnología debe estar al servicio de las personas. Creamos sistemas comprensibles, adaptados a quienes los utilizan y que permiten intervenir manualmente cuando es necesario. La automatización ayuda, pero no sustituye el conocimiento ni la capacidad de decisión de las personas.</p></div>
               </article>
               <article class="ethic-card">
-                <img class="principle-image" src="assets/principios/reparto.png" alt="Símbolo de reparto justo de los excedentes" loading="lazy">
+                <img class="principle-image round-image" src="assets/principios/reparto.png" alt="Símbolo de reparto justo de los excedentes" loading="lazy">
                 <div><h4>Reparto justo de los excedentes</h4><p>Promovemos soluciones accesibles, reparables y compartibles. El conocimiento, la documentación y las herramientas open source permiten que otras personas puedan aprender, adaptar y mejorar los sistemas. También buscamos que los recursos disponibles se utilicen de forma responsable y que los beneficios de la tecnología no se concentren en unas pocas manos.</p></div>
               </article>
             </div>
@@ -137,35 +131,63 @@
           <div class="principles-block">
             <h3>Los doce principios de diseño de David Holmgren</h3>
             <div class="holmgren-grid">
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_1.png" alt="Icono del principio observar e interactuar" loading="lazy"><div><span class="principle-num">01 / Principio</span><h4>Observar e interactuar</h4><p>Antes de diseñar o automatizar, observamos el lugar, sus ritmos, sus necesidades y la forma en que las personas lo utilizan. Una buena solución comienza por comprender el sistema.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_2.png" alt="Icono del principio captar y almacenar energía" loading="lazy"><div><span class="principle-num">02 / Principio</span><h4>Captar y almacenar energía</h4><p>Ayudamos a aprovechar y conservar los recursos disponibles, como el agua de lluvia, la energía solar o la información sobre los consumos. Medir y almacenar estos recursos permite utilizarlos cuando más se necesitan.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_3.png" alt="Icono del principio obtener un rendimiento" loading="lazy"><div><span class="principle-num">03 / Principio</span><h4>Obtener un rendimiento</h4><p>Toda instalación debe ofrecer una utilidad concreta. Diseñamos sistemas que ayudan a ahorrar y a aprovechar mejor los recursos disponibles, especialmente cuando son escasos. Buscamos mejorar su gestión y aportar resultados que puedan mantenerse en el tiempo.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_4.png" alt="Icono del principio aplicar la autorregulación y aceptar la retroalimentación" loading="lazy"><div><span class="principle-num">04 / Principio</span><h4>Aplicar la autorregulación y aceptar la retroalimentación</h4><p>La monitorización permite conocer qué está ocurriendo y ajustar el funcionamiento de los sistemas. También tenemos en cuenta los límites de cada instalación y aprendemos de sus resultados para mejorarla.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_5.png" alt="Icono del principio usar y valorar los recursos y servicios renovables" loading="lazy"><div><span class="principle-num">05 / Principio</span><h4>Usar y valorar los recursos y servicios renovables</h4><p>Priorizamos el uso eficiente de recursos renovables y de los servicios que ya ofrece el entorno. La tecnología debe ayudar a aprovecharlos sin agotarlos ni generar dependencias innecesarias.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_6.png" alt="Icono del principio producir sin desperdicios" loading="lazy"><div><span class="principle-num">06 / Principio</span><h4>Producir sin desperdicios</h4><p>Buscamos reducir el consumo innecesario de agua, energía, materiales y tiempo. Diseñamos sistemas duraderos, reparables y proporcionados, evitando dispositivos o funciones que no aporten una utilidad clara.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_7.png" alt="Icono del principio diseñar desde los patrones hacia los detalles" loading="lazy"><div><span class="principle-num">07 / Principio</span><h4>Diseñar desde los patrones hacia los detalles</h4><p>Partimos de una visión general del lugar, sus flujos y sus relaciones antes de decidir qué sensores, automatizaciones o dispositivos son necesarios. Los detalles deben responder a una estrategia coherente.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_8.png" alt="Icono del principio integrar más que segregar" loading="lazy"><div><span class="principle-num">08 / Principio</span><h4>Integrar más que segregar</h4><p>Entendemos cada instalación como una red conectada de sensores, actuadores y sistemas que trabajan juntos. Un cerebro común reúne la información y coordina el riego, la energía, la climatización y la gestión del agua. Así reducimos dispositivos innecesarios y conseguimos un funcionamiento más eficiente y coordinado.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_9.png" alt="Icono del principio usar soluciones pequeñas y lentas" loading="lazy"><div><span class="principle-num">09 / Principio</span><h4>Usar soluciones pequeñas y lentas</h4><p>Preferimos sistemas sencillos, escalables y fáciles de mantener. Las soluciones pequeñas permiten aprender, corregir errores y adaptarse sin asumir costes o complejidades innecesarias.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_10.png" alt="Icono del principio usar y valorar la diversidad" loading="lazy"><div><span class="principle-num">10 / Principio</span><h4>Usar y valorar la diversidad</h4><p>Cada finca, vivienda y proyecto es diferente. Diseñamos soluciones adaptadas a sus condiciones, combinando distintas tecnologías, estrategias y formas de uso para aumentar la resiliencia.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_11.png" alt="Icono del principio usar los bordes y valorar lo marginal" loading="lazy"><div><span class="principle-num">11 / Principio</span><h4>Usar los bordes y valorar lo marginal</h4><p>Prestamos atención a los espacios, recursos y posibilidades que suelen quedar fuera de los usos habituales. En esos límites pueden aparecer oportunidades para mejorar la gestión del agua, la energía y las instalaciones.</p></div></article>
-              <article class="holmgren-card"><img class="principle-image" src="assets/principios/es_principle_12.png" alt="Icono del principio usar y responder creativamente al cambio" loading="lazy"><div><span class="principle-num">12 / Principio</span><h4>Usar y responder creativamente al cambio</h4><p>Diseñamos sistemas preparados para evolucionar. Las necesidades cambian, aparecen nuevas tecnologías y las instalaciones pueden enfrentarse a situaciones imprevistas. Por eso buscamos soluciones flexibles, comprensibles y capaces de adaptarse.</p></div></article>
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_1.png" alt="Icono del principio observar e interactuar" loading="lazy"><div><span class="principle-num">01 / Principio</span><h4>Observar e interactuar</h4><p>Antes de diseñar o automatizar, observamos el lugar, sus ritmos, sus necesidades y la forma en que las personas lo utilizan. Una buena solución comienza por comprender el sistema.</p></div></article>
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_2.png" alt="Icono del principio captar y almacenar energía" loading="lazy"><div><span class="principle-num">02 / Principio</span><h4>Captar y almacenar energía</h4><p>Ayudamos a aprovechar y conservar los recursos disponibles, como el agua de lluvia, la energía solar o la información sobre los consumos. Medir y almacenar estos recursos permite utilizarlos cuando más se necesitan.</p></div></article>
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_3.png" alt="Icono del principio obtener un rendimiento" loading="lazy"><div><span class="principle-num">03 / Principio</span><h4>Obtener un rendimiento</h4><p>Toda instalación debe ofrecer una utilidad concreta. Diseñamos sistemas que ayudan a ahorrar y a aprovechar mejor los recursos disponibles, especialmente cuando son escasos. Buscamos mejorar su gestión y aportar resultados que puedan mantenerse en el tiempo.</p></div></article>
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_4.png" alt="Icono del principio aplicar la autorregulación y aceptar la retroalimentación" loading="lazy"><div><span class="principle-num">04 / Principio</span><h4>Aplicar la autorregulación y aceptar la retroalimentación</h4><p>La monitorización permite conocer qué está ocurriendo y ajustar el funcionamiento de los sistemas. También tenemos en cuenta los límites de cada instalación y aprendemos de sus resultados para mejorarla.</p></div></article>
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_5.png" alt="Icono del principio usar y valorar los recursos y servicios renovables" loading="lazy"><div><span class="principle-num">05 / Principio</span><h4>Usar y valorar los recursos y servicios renovables</h4><p>Priorizamos el uso eficiente de recursos renovables y de los servicios que ya ofrece el entorno. La tecnología debe ayudar a aprovecharlos sin agotarlos ni generar dependencias innecesarias.</p></div></article>
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_6.png" alt="Icono del principio producir sin desperdicios" loading="lazy"><div><span class="principle-num">06 / Principio</span><h4>Producir sin desperdicios</h4><p>Buscamos reducir el consumo innecesario de agua, energía, materiales y tiempo. Diseñamos sistemas duraderos, reparables y proporcionados, evitando dispositivos o funciones que no aporten una utilidad clara.</p></div></article>
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_7.png" alt="Icono del principio diseñar desde los patrones hacia los detalles" loading="lazy"><div><span class="principle-num">07 / Principio</span><h4>Diseñar desde los patrones hacia los detalles</h4><p>Partimos de una visión general del lugar, sus flujos y sus relaciones antes de decidir qué sensores, automatizaciones o dispositivos son necesarios. Los detalles deben responder a una estrategia coherente.</p></div></article>
+
+              <article class="principle-feature">
+                <div>
+                  <span class="principle-num">08 / Principio</span>
+                  <h4>Integrar más que segregar</h4>
+                  <p>Entendemos cada instalación como una red conectada de sensores, actuadores y sistemas que trabajan juntos. Un cerebro común reúne la información y coordina el riego, la energía, la climatización y la gestión del agua. Así reducimos dispositivos innecesarios y conseguimos un funcionamiento más eficiente y coordinado.</p>
+                </div>
+                <figure class="media-frame">
+                  <img src="assets/sobre-permatica/sobre-diagrama-sistema.png" alt="Diagrama de sensores, red, cerebro común y actuadores de un sistema PERMATICA" loading="lazy">
+                </figure>
+              </article>
+
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_9.png" alt="Icono del principio usar soluciones pequeñas y lentas" loading="lazy"><div><span class="principle-num">09 / Principio</span><h4>Usar soluciones pequeñas y lentas</h4><p>Preferimos sistemas sencillos, escalables y fáciles de mantener. Las soluciones pequeñas permiten aprender, corregir errores y adaptarse sin asumir costes o complejidades innecesarias.</p></div></article>
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_10.png" alt="Icono del principio usar y valorar la diversidad" loading="lazy"><div><span class="principle-num">10 / Principio</span><h4>Usar y valorar la diversidad</h4><p>Cada finca, vivienda y proyecto es diferente. Diseñamos soluciones adaptadas a sus condiciones, combinando distintas tecnologías, estrategias y formas de uso para aumentar la resiliencia.</p></div></article>
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_11.png" alt="Icono del principio usar los bordes y valorar lo marginal" loading="lazy"><div><span class="principle-num">11 / Principio</span><h4>Usar los bordes y valorar lo marginal</h4><p>Prestamos atención a los espacios, recursos y posibilidades que suelen quedar fuera de los usos habituales. En esos límites pueden aparecer oportunidades para mejorar la gestión del agua, la energía y las instalaciones.</p></div></article>
+              <article class="holmgren-card"><img class="principle-image round-image" src="assets/principios/es_principle_12.png" alt="Icono del principio usar y responder creativamente al cambio" loading="lazy"><div><span class="principle-num">12 / Principio</span><h4>Usar y responder creativamente al cambio</h4><p>Diseñamos sistemas preparados para evolucionar. Las necesidades cambian, aparecen nuevas tecnologías y las instalaciones pueden enfrentarse a situaciones imprevistas. Por eso buscamos soluciones flexibles, comprensibles y capaces de adaptarse.</p></div></article>
             </div>
           </div>
         </section>
       </div>
 
       <section class="section dark-section">
-        <div class="container">
-          <div class="section-head">
-            <div><span class="eyebrow light">Un proyecto colectivo</span><h2>Permacultura Aragón</h2><p>PERMATICA forma parte de Permacultura Aragón. Unimos el diseño permacultural y la tecnología para responder a necesidades reales.</p></div>
+        <div class="container media-split">
+          <div class="media-copy">
+            <span class="eyebrow light">Un proyecto colectivo</span>
+            <h2>Permacultura Aragón</h2>
+            <p>PERMATICA forma parte de Permacultura Aragón. Unimos el diseño permacultural y la tecnología para responder a necesidades reales.</p>
             <a class="button pale" href="https://permaculturaaragon.org/">Conoce Permacultura Aragón<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
           </div>
+          <figure class="media-frame landscape"><img src="assets/sobre-permatica/sobre-torre-contexto.jpg" alt="Entorno del Centro Demostrativo de Permacultura Torre Escribana" loading="lazy"></figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container media-split reverse">
+          <div class="media-copy">
+            <span class="eyebrow">Tecnología comprensible</span>
+            <h2>Controlar sin perder el contacto con el sistema</h2>
+            <p>La automatización debe facilitar el trabajo, no ocultarlo. Queremos que las personas puedan comprender qué ocurre, consultar la información y actuar cuando sea necesario.</p>
+          </div>
+          <figure class="media-frame landscape"><img src="assets/sobre-permatica/sobre-persona-controlando.jpg" alt="Persona supervisando y controlando un sistema PERMATICA" loading="lazy"></figure>
         </div>
       </section>
 
       <section class="cta">
         <div class="container">
-          <div><h2>Cuéntanos qué necesitas</h2><p>Cada finca, vivienda y proyecto parte de una situación diferente. Explícanos qué quieres controlar, medir o automatizar y estudiaremos una solución adaptada.</p></div>
+          <div>
+            <h2>Cuéntanos qué necesitas</h2>
+            <p>Cada finca, vivienda y proyecto parte de una situación diferente. Explícanos qué quieres controlar, medir o automatizar y estudiaremos una solución adaptada.</p>
+          </div>
           <a class="button" href="contacto.html">Solicita un presupuesto personalizado<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
         </div>
       </section>
@@ -175,7 +197,10 @@
       <div class="container">
         <div class="footer-top">
           <div class="footer-brand"><a href="index.html"><img src="assets/logo-permatica.jpg" width="472" height="138" alt="PERMATICA" loading="lazy"></a><p>Un proyecto colectivo de Permacultura Aragón.</p></div>
-          <div class="footer-links"><div><a href="servicios.html">Servicios</a><a href="proyectos.html">Proyectos</a><a href="open-source.html">Open source y DIY</a></div><div><a href="sobre-permatica.html">Sobre PERMATICA</a><a href="contacto.html">Contacto</a><a href="https://permaculturaaragon.org/" target="_blank" rel="noopener noreferrer">Permacultura Aragón ↗</a></div></div>
+          <div class="footer-links">
+            <div><a href="servicios.html">Servicios</a><a href="proyectos.html">Proyectos</a><a href="open-source.html">Open source y DIY</a></div>
+            <div><a href="sobre-permatica.html">Sobre PERMATICA</a><a href="contacto.html">Contacto</a><a href="https://permaculturaaragon.org/" target="_blank" rel="noopener noreferrer">Permacultura Aragón ↗</a></div>
+          </div>
         </div>
         <div class="footer-bottom"><span>© 2026 PERMATICA · Permacultura Aragón</span><span>Permacultura y domótica open source</span></div>
       </div>
